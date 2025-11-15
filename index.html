@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LYNQ CHEATS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .cheat-option {
+            margin-bottom: 10px;
+        }
+        .cheat-option label {
+            margin-right: 10px;
+        }
+        .cheat-option input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .fov-slider {
+            width: 100%;
+            margin-top: 10px;
+        }
+        button {
+            background-color: #ff0000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>LYNQ CHEATS</h1>
+        <div class="cheat-option">
+            <label for="aimbot">Aimbot:</label>
+            <input type="checkbox" id="aimbot" checked>
+        </div>
+        <div class="cheat-option">
+            <label for="no-recoil">No Recoil:</label>
+            <input type="checkbox" id="no-recoil" checked>
+        </div>
+        <div class="cheat-option">
+            <label for="fov">FOV Regulator:</label>
+            <input type="range" id="fov" min="1" max="100" value="50" class="fov-slider">
+        </div>
+        <div class="cheat-option">
+            <label for="extra-option">Extra Option:</label>
+            <input type="checkbox" id="extra-option">
+        </div>
+        <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <script>
+        function startGame() {
+            const password = prompt("Enter password:");
+            if (password === "LYNQCHEATS-AUXILIO123") {
+                const aimbotEnabled = document.getElementById('aimbot').checked;
+                const noRecoilEnabled = document.getElementById('no-recoil').checked;
+                const fovValue = document.getElementById('fov').value;
+                const extraOptionEnabled = document.getElementById('extra-option').checked;
+
+                // Code to start the game with the selected cheats goes here
+                console.log(`Aimbot: ${aimbotEnabled}`);
+                console.log(`No Recoil: ${noRecoilEnabled}`);
+                console.log(`FOV: ${fovValue}`);
+                console.log(`Extra Option: ${extraOptionEnabled}`);
+
+                alert("Game started with selected cheats!");
+            } else {
+                alert("Incorrect password!");
+            }
+        }
+    </script>
+</body>
+</html>
